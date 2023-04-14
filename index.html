@@ -20,16 +20,23 @@
       <input type="text" placeholder="Nuovo compito da svolgere">
       <button>Aggiungi</button>
     </div>
-
-    <h2>Non ci sono più compiti da svolgere!</h2>
-
+    
     <div class="container">
-      <!--Creo gli ul per la mia to do list-->
-      <ul class="todo-list">
+      <!--Facciamo un controllo in modo che questo h2 compaia solo quando l'array todo è vuoto-->
+      <h2 v-if="todo.length === 0">Non ci sono più compiti da svolgere!</h2>
 
-        <li v-for="task in todo">
+
+      <!--Creo gli ul per la mia to do list-->
+      <ul v-else class="todo-list">
+
+        <li 
+        v-for="task in todo" 
+        :class="{'done': task.done}" 
+        @click="task.done= !task.done"
+        >
           <span>{{task.text}}</span>
           <i class="fa-regular fa-trash-can"></i>
+
         </li>
 
       </ul>

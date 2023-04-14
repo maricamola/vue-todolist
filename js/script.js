@@ -6,23 +6,23 @@ createApp ({
       todo:[
         {
           text: "Sistemare casa",
-          done: "false",
+          done: false
         },
         {
           text: "Seguire il corso Boolean",
-          done: "false",
+          done: false
         },
         {
           text: "Preparare il pranzo",
-          done: "false",
+          done: false
         },
         {
           text: "Ripassare Vue",
-          done: "false",
+          done: false
         },
         {
           text: "Andare in palestra",
-          done: "false",
+          done: false
         },
       ]
     }

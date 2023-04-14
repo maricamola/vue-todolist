@@ -34,3 +34,14 @@ Predisporre un campo di input testuale e un pulsante “aggiungi”: cliccando s
 
 - Ciclo l'elemento li per stampare la todo-list
 
+- Aggiungo un ciclo if al messaggio che deve comparire solo quando la todo-list è vuota, quindi quando tutti i compiti sono stati svolti
+
+- Agli li aggiungo la classe "done" che al click deve sbarrare la task 
+
+- Aggiungo un click al fontawesome del trash in modo da eliminare la task 
+
+- Aggiungo il click.stop che mi permette di interrompere l'evento (@click) che lo precede
+
+- 
+
+
