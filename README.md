@@ -28,3 +28,9 @@ Predisporre un campo di input testuale e un pulsante “aggiungi”: cliccando s
 
 ## Steps
 
+- Creo in pagina un div per il logo, uno per la parte dell'input con il bottone per aggiungere tasks e un container per la to do list.
+
+- Aggiungo classe done per distinguere le tasks svolte da quelle da svolgere
+
+- Ciclo l'elemento li per stampare la todo-list
+
