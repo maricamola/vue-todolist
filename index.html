@@ -12,30 +12,42 @@
 <body>
   <div id="app">
 
+    <!--LOGO-->
     <div class="logo">
       <img src="img/logo.png" alt="logo Boolean">
     </div>
 
+    <!--Input Area-->
     <div class="input-area">
-      <input type="text" placeholder="Nuovo compito da svolgere">
-      <button>Aggiungi</button>
+      <input 
+      v-model.trim="newTask" 
+      @keyup.enter="addTask"
+      type="text" placeholder="Nuovo compito da svolgere">
+
+      <button @click="addTask">Aggiungi</button>
+
+      <div>
+        <span class="error">{{errorMessage}}</span>
+      </div>
+
     </div>
     
     <div class="container">
       <!--Facciamo un controllo in modo che questo h2 compaia solo quando l'array todo è vuoto-->
       <h2 v-if="todo.length === 0">Non ci sono più compiti da svolgere!</h2>
 
-
       <!--Creo gli ul per la mia to do list-->
       <ul v-else class="todo-list">
 
         <li 
-        v-for="task in todo" 
+        v-for="(task,index) in todo" 
         :class="{'done': task.done}" 
         @click="task.done= !task.done"
         >
           <span>{{task.text}}</span>
-          <i class="fa-regular fa-trash-can"></i>
+          <!--Aggiungo il @click al cestino per eleminare le task svolte-->
+          <i @click.stop="deleteTask(index)"
+          class="fa-regular fa-trash-can"></i>
 
         </li>
 

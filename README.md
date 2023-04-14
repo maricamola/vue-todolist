@@ -42,6 +42,15 @@ Predisporre un campo di input testuale e un pulsante “aggiungi”: cliccando s
 
 - Aggiungo il click.stop che mi permette di interrompere l'evento (@click) che lo precede
 
-- 
+- Con splice elimino l'elemento cliccato dall'array todo-list
+
+- Creo una stringa vuota per il mio errorMessage che comparirà quando l'utente clicca sul cestino senza prima "sbarrare" la task
+
+- Aggiungiamo un controllo per l'inserire della nuova task:
+1) Se il messaggio è inferiore a 5 caratteri, comprarirà un messaggio di errore;
+
+2) Se il messaggio è corretto, dobbiamo aggiungelo nella todo-list
+
+
 
 

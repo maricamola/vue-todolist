@@ -39,6 +39,10 @@ h2{
   margin-right: 20px;
 }
 
+button{
+  cursor: pointer;
+}
+
 .container{
   width: 70%;
   margin: 0 auto;
@@ -76,5 +80,6 @@ h2{
 .todo-list li.done span{
   text-decoration: line-through;
 }
+
 
 
